@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="560.0" styleClass="fondo" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RegisterController">
+   <children>
+      <VBox fx:id="Inicio" alignment="TOP_CENTER" maxHeight="-Infinity" prefHeight="373.0" prefWidth="420.0" styleClass="vbox-with-shadow">
+         <children>
+            <HBox alignment="CENTER" prefHeight="46.0" prefWidth="420.0">
+               <children>
+                  <Label text="REGISTRO DE CUENTAS" textFill="#a69d21">
+                     <font>
+                        <Font name="Franklin Gothic Heavy" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="6.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="195.0" prefWidth="410.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="190.0" prefWidth="286.0" spacing="19.0">
+                     <children>
+                        <Label prefHeight="16.0" prefWidth="159.0" text="Información personal" textFill="#2b8c8c">
+                           <font>
+                              <Font name="Georgia Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tf_nombre" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="27.0" prefWidth="172.0" promptText="Nombre" styleClass="text">
+                           <font>
+                              <Font name="Georgia" size="12.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="tf_apellidos" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="27.0" prefWidth="172.0" promptText="Apellidos" styleClass="text">
+                           <font>
+                              <Font name="Georgia" size="12.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="1.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="195.0" prefWidth="303.0" spacing="20.0">
+                     <children>
+                        <Label text="Información de contacto" textFill="#2b8c8c">
+                           <font>
+                              <Font name="Georgia Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tf_username" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="27.0" prefWidth="184.0" promptText="Nombre de Usuario" styleClass="text">
+                           <font>
+                              <Font name="Georgia" size="12.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="tf_email" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="27.0" prefWidth="184.0" promptText="Email" styleClass="text">
+                           <font>
+                              <Font name="Georgia" size="12.0" />
+                           </font>
+                        </TextField>
+                        <PasswordField fx:id="tf_password" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="27.0" prefWidth="184.0" promptText="Contraseña" styleClass="text">
+                           <font>
+                              <Font name="Georgia" size="12.0" />
+                           </font>
+                        </PasswordField>
+                        <PasswordField fx:id="tf_repassword" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="27.0" prefWidth="184.0" promptText="Confirmar contraseña" styleClass="text" stylesheets="@../css/login.css">
+                           <font>
+                              <Font name="Georgia" size="12.0" />
+                           </font>
+                        </PasswordField>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="4.0" />
+               </VBox.margin>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#onRegistrar" prefHeight="33.0" prefWidth="95.0" style="-fx-border-radius: 12;" styleClass="btnregi" text="Registrar" textFill="WHITE">
+               <font>
+                  <Font name="Georgia" size="16.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="22.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onAlreadyRegister" prefHeight="33.0" prefWidth="227.0" style="-fx-border-radius: 12;" styleClass="btnregi" text="¿Ya se encuentra registrado?" textFill="WHITE">
+               <font>
+                  <Font name="Georgia" size="16.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</HBox>

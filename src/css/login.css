@@ -1,0 +1,41 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16/08/2023, 12:30:17 AM
+    Author     : melan
+*/
+
+.fondo{
+    -fx-background-image:url("../images/fondo.png");
+    -fx-background-size: 100% 100%;
+}
+
+.hboxfondo{
+    -fx-background-color: rgba(43, 140, 140, 0.4); 
+}
+.vbox-with-shadow {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(three-pass-box, white, 9, 0, 0, 0);
+}
+
+.text{
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+    -fx-border-color: #A1A626;
+}
+
+.btnregi{
+    -fx-background-radius: 30;
+    -fx-background-color: #2b8c8c;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 0, 2);
+    
+}
+.btninicio{
+    -fx-background-radius: 30;
+    -fx-background-color: #A1A626;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 10, 0, 0, 2);
+}

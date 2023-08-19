@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="405.0" prefWidth="540.0" styleClass="fondo" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
+   <children>
+      <VBox fx:id="Inicio" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="300.0" prefWidth="237.0" styleClass="vbox-with-shadow">
+         <children>
+            <HBox alignment="CENTER" prefHeight="47.0" prefWidth="237.0">
+               <children>
+                  <Label text="FIT" textFill="#2b8c8c">
+                     <font>
+                        <Font name="Franklin Gothic Heavy" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <Label text="ADMIN">
+                     <font>
+                        <Font name="Franklin Gothic Heavy" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="34.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="24.0" spacing="17.0">
+                     <children>
+                        <ImageView fitHeight="22.0" fitWidth="22.0">
+                           <image>
+                              <Image url="@../images/usuario%20.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="3.0" top="18.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="22.0" fitWidth="22.0">
+                           <image>
+                              <Image url="@../images/contra.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets right="1.0" top="3.0" />
+                           </VBox.margin>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="100.0" prefWidth="177.0" spacing="15.0">
+                     <children>
+                        <TextField maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="27.0" prefWidth="170.0" promptText="Usuario" styleClass="text" stylesheets="@../css/login.css" />
+                        <PasswordField maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="27.0" prefWidth="170.0" promptText="Contraseña" styleClass="text" stylesheets="@../css/login.css" />
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="3.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="237.0">
+               <children>
+                  <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnlogin" prefHeight="32.0" prefWidth="123.0" styleClass="btninicio" stylesheets="@../css/login.css" text="Iniciar Sesion" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="26.0" prefWidth="237.0">
+               <children>
+                  <Label text="¿No tienes una cuenta? ">
+                     <font>
+                        <Font name="Georgia Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label onMouseClicked="#registro" text="REGISTRATE" textFill="#2b8c8c">
+                     <font>
+                        <Font name="Franklin Gothic Heavy" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>
