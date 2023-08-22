@@ -14,40 +14,43 @@ import java.sql.SQLException;
  * @author Ashley Mendoza V
  */
 public class Conexion {
-     public static void main(String[] args) {
-        // Configuración de la conexión
-        String jdbcUrl = "jdbc:mysql://localhost:3306/fitadmindb";
-        String username = " ";
-        String password = " ";
-        
-        // Objeto Connection para manejar la conexión
-        Connection connection = null;
-        
+    
+    private String db = "FitAdminDB";
+    private String url = "jdbc:mysql://localhost:3306/";
+    private String user = "fitadmindb";
+    private String password = "fitadmindb";
+    private String driver = "com.mysql.cj.jdbc.Driver";
+
+    private Connection conn;
+    private static Conexion connector;
+
+    public static Conexion DB() {
+        if (connector == null) {
+            connector = new Conexion();
+        }
+        return connector;
+    }
+
+    public Connection connect() {
+        return this.conn;
+    }
+
+    private Conexion() {
         try {
-            // Cargar el controlador JDBC
-            Class.forName("com.mysql.jdbc.Driver");
-            
-            // Establecer la conexión
-            connection = DriverManager.getConnection(jdbcUrl, username, password);
-            
-            System.out.println("Conexión exitosa a la base de datos.");
-            
-            // Realiza aquí las operaciones en la base de datos
-            
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            // Cerrar la conexión en el bloque finally
-            if (connection != null) {
-                try {
-                    connection.close();
-                    System.out.println("Conexión cerrada.");
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-            }
+            Class.forName(driver);
+            conn = DriverManager.getConnection(url + db, user, password);
+            System.out.println("DATABASE CONNECTED");
+        } catch (SQLException | ClassNotFoundException ex) {
+            System.out.println("DATABASE DES-CONNECTED");
+            System.out.println("Message: " + ex.getMessage());
+        }
+    }
+
+    public void disconnect() {
+        try {
+            conn.close();
+        } catch (SQLException ex) {
+            System.out.println("Message: " + ex.getMessage());
         }
     }
 }
