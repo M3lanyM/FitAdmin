@@ -47,4 +47,12 @@ public class MenuController implements Initializable {
         containerMenu.getChildren().clear(); //limpiar
         containerMenu.getChildren().add(root);
     }
+
+    @FXML
+    private void Client(MouseEvent event) throws IOException {
+        System.out.println("clicked me!");
+        Parent root = FXMLLoader.load(getClass().getResource("/menuOptions/Client.fxml"));
+        containerMenu.getChildren().clear(); //limpiar
+        containerMenu.getChildren().add(root);
+    }
 }

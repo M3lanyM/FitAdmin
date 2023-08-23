@@ -19,7 +19,7 @@ public class FitAdmin extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/menu.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/Menu.fxml"));
        
         Scene scene = new Scene(root);
         

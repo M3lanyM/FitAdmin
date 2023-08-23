@@ -13,8 +13,25 @@
     -fx-border-color: #A1A626;
     -fx-border-width: 0px 0px 0px 3px;
 }
-
 .border{
     -fx-border-color: #e4e2e2;
     -fx-border-width: 0px 2px 0px 0px;
+}
+.shadow{
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.5), 8,0,0,0)
+}
+.contaClient{
+    -fx-background-color: #fff;
+    -fx-background-radius: 6px;
+}
+
+.tableClient{
+    -fx-background-color: transparent;
+    -fx-border-color:  transparent;
+    
+    -fx-border-width: 2px;
+    -fx-padding: 0px;
+}
+.h{
+    -fx-text-fill: #a1a626;
 }
