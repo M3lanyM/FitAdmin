@@ -27,7 +27,7 @@
             </TableView>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="61.0" layoutY="38.0" prefHeight="162.0" prefWidth="378.0" stylesheets="@../css/menu.css" AnchorPane.bottomAnchor="343.0" AnchorPane.leftAnchor="49.0" AnchorPane.rightAnchor="395.0" AnchorPane.topAnchor="30.0">
+      <AnchorPane layoutX="61.0" layoutY="38.0" prefHeight="162.0" prefWidth="328.0" stylesheets="@../css/menu.css" AnchorPane.bottomAnchor="343.0" AnchorPane.leftAnchor="49.0" AnchorPane.rightAnchor="445.0" AnchorPane.topAnchor="30.0">
          <styleClass>
             <String fx:value="contaClient" />
             <String fx:value="shadow" />
