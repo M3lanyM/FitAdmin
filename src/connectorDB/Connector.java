@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package conexionDB;
+package connectorDB;
 
 
 import java.sql.Connection;
@@ -13,7 +13,7 @@ import java.sql.SQLException;
  *
  * @author Ashley Mendoza V
  */
-public class Conexion {
+public class Connector {
     
     private String db = "FitAdminDB";
     private String url = "jdbc:mysql://localhost:3306/";
@@ -22,11 +22,11 @@ public class Conexion {
     private String driver = "com.mysql.cj.jdbc.Driver";
 
     private Connection conn;
-    private static Conexion connector;
+    private static Connector connector;
 
-    public static Conexion DB() {
+    public static Connector DB() {
         if (connector == null) {
-            connector = new Conexion();
+            connector = new Connector();
         }
         return connector;
     }
@@ -35,7 +35,7 @@ public class Conexion {
         return this.conn;
     }
 
-    private Conexion() {
+    private Connector() {
         try {
             Class.forName(driver);
             conn = DriverManager.getConnection(url + db, user, password);
