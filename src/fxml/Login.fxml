@@ -44,7 +44,7 @@
                      <children>
                         <ImageView fitHeight="22.0" fitWidth="22.0">
                            <image>
-                              <Image url="@../images/usuario%20.png" />
+                              <Image url="@../images/user.png" />
                            </image>
                            <VBox.margin>
                               <Insets left="3.0" top="18.0" />
@@ -52,7 +52,7 @@
                         </ImageView>
                         <ImageView fitHeight="22.0" fitWidth="22.0">
                            <image>
-                              <Image url="@../images/contra.png" />
+                              <Image url="@../images/password.png" />
                            </image>
                            <VBox.margin>
                               <Insets right="1.0" top="3.0" />
